@@ -4,7 +4,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function MenuAppBar() {
   return (
-    <Box sx={{ flexGrow: 1, position: "relative" }}>
+    <Box sx={{ flexGrow: 1 }}>
       <AppBar
         position="static"
         style={{
