@@ -2,6 +2,7 @@ import React from "react";
 import "./App.scss";
 import { Canvas } from "@react-three/fiber";
 import Box from "./components/Box";
+import OrbitController from "./components/OrbitController";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         >
           <color attach="background" args={["#ffffff"]} />
           <ambientLight intensity={0.3} />
+          <OrbitController />
           <Box />
         </Canvas>
       </>
