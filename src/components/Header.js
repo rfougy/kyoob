@@ -1,5 +1,12 @@
 import * as React from "react";
-import { AppBar, Box, Toolbar, Typography, IconButton } from "@mui/material";
+import {
+  AppBar,
+  Box,
+  Toolbar,
+  Typography,
+  IconButton,
+  Link,
+} from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function MenuAppBar() {
@@ -22,6 +29,7 @@ export default function MenuAppBar() {
             aria-controls="menu-appbar"
             aria-haspopup="true"
             color="inherit"
+            href="https://github.com/rfougy/kyoob"
           >
             <GitHubIcon />
           </IconButton>
