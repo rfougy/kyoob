@@ -8,7 +8,7 @@ import OrbitController from "./OrbitController";
 
 const HomePage = () => {
   return (
-    <Box sx={{ position: "fixed", height: "50%", width: "50%" }}>
+    <Box sx={{ position: "fixed", height: "100%", width: "100%" }}>
       <Canvas
         dpr={[1, 2]}
         shadows
