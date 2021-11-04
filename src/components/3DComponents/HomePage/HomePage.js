@@ -6,7 +6,6 @@ import OrbitController from "./OrbitController";
 
 const HomePage = () => {
   return (
-    <>
       <Canvas
         dpr={[1, 2]}
         shadows
@@ -23,7 +22,6 @@ const HomePage = () => {
         <Box />
         <gridHelper position={[0, -1, 0]} args={[100, 100, `gray`, `gray`]} />
       </Canvas>
-    </>
   );
 };
 
