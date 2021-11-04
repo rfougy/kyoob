@@ -5,7 +5,6 @@ import {
   Toolbar,
   Typography,
   IconButton,
-  Link,
 } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 

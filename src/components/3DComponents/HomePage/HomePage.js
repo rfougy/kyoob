@@ -8,11 +8,11 @@ import OrbitController from "./OrbitController";
 
 const HomePage = () => {
   return (
-    <Box sx={{ position: "fixed", height: "100%", width: "100%" }}>
+    <Box sx={{ position: "fixed", height: "50%", width: "50%" }}>
       <Canvas
         dpr={[1, 2]}
         shadows
-        gl={{ alpha: false }}
+        gl={{ alpha: true }}
         camera={{ position: [-5, 2, 10], fov: 60 }}
       >
         <OrbitController />

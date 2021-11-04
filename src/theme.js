@@ -2,32 +2,13 @@ import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
   palette: {
-    mode: "light",
-    primary: {
-      main: "#000000",
+    background: {
+      default: "#222222"
     },
-    secondary: {
-      main: "#ffffff",
-    },
-  },
-  shape: {
-    borderRadius: 0,
-  },
-  typography: {
-    fontFamily: "Oswald",
-    h3: {
-      fontFamily: "Bebas Neue",
-    },
-    h4: {
-      fontFamily: "Bebas Neue",
-    },
-    h5: {
-      fontFamily: "Bebas Neue",
-    },
-    h6: {
-      fontFamily: "Bebas Neue",
-    },
-  },
+    text: {
+      primary: "#ffffff"
+    }
+  }
 });
 
 export default theme;
