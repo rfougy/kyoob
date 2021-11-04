@@ -7,7 +7,7 @@ const Box = () => {
   return (
     <mesh ref={mesh}>
       <boxBufferGeometry attach="geometry" args={[1, 1, 1]} />
-      <meshStandardMaterial wireframe color="black" />
+      <meshStandardMaterial material="material" color="red" />
     </mesh>
   );
 };
