@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 
-const Box = () => {
+const Cube = () => {
   const mesh = useRef(null);
   useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += 0.005));
   return (
@@ -12,4 +12,4 @@ const Box = () => {
   );
 };
 
-export default Box;
+export default Cube;
