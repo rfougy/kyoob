@@ -2,15 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="./images/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#ffffff" />
     <meta
       name="description"
       content="Experimental PWA 3D-focused React Application"
     />
-    <link rel="apple-touch-icon" href="./images/logo.png" />
-    <link rel="manifest" href="./manifest.json" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
     <title>Kyo͞ob | by Riviere F.</title>
   </head>
   <body>
@@ -21,12 +21,8 @@
         window.addEventListener("load", () => {
           navigator.serviceWorker
             .register("./serviceworker.js")
-            .then((reg) =>
-              console.log("Service Worker Registration Successful: ", reg.scope)
-            )
-            .catch((err) =>
-              console.log("Service Worker Registration Failed: ", err)
-            );
+            .then((reg) => console.log("Success: ", reg.scope))
+            .catch((err) => console.log("Failure: ", err));
         });
       }
     </script>
