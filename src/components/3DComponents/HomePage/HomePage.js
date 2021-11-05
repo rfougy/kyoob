@@ -1,5 +1,4 @@
 import React from "react";
-import "../../../App.scss";
 import { Box } from "@mui/material";
 
 import { Canvas } from "@react-three/fiber";

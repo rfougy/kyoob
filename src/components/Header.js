@@ -4,7 +4,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 
-const MenuAppBar = (props) => {
+const Header = (props) => {
   const { changeMode, mode } = props;
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -46,4 +46,4 @@ const MenuAppBar = (props) => {
   );
 };
 
-export default MenuAppBar;
+export default Header;
