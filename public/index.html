@@ -21,8 +21,12 @@
         window.addEventListener("load", () => {
           navigator.serviceWorker
             .register("/sw_cached_pages.js")
-            .then((reg) => console.log("Success: ", reg.scope))
-            .catch((err) => console.log("Failure: ", err));
+            .then((reg) =>
+              console.log("Service Worker Registration -> Success: ", reg.scope)
+            )
+            .catch((err) =>
+              console.log("Service Worker Registration -> Failed: ", err)
+            );
         });
       }
     </script>
