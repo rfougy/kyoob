@@ -2,11 +2,9 @@ const self = this;
 const CACHE_NAME = "version-1";
 
 self.addEventListener("install", (event) => {
-  console.log("INSTALLED");
 });
 
 self.addEventListener("activate", (event) => {
-  console.log("ACTIVATED");
   event.waitUntil(
     caches.keys().then((cacheNames) =>
       Promise.all(
