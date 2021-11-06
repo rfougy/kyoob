@@ -1,12 +1,9 @@
 const self = this;
 const CACHE_NAME = "version-1";
 
-self.addEventListener("install", (event) => {
-  console.log("INSTALLED");
-});
+self.addEventListener("install", (event) => {});
 
 self.addEventListener("activate", (event) => {
-  console.log("ACTIVATED");
   event.waitUntil(
     caches.keys().then((cacheNames) =>
       Promise.all(
@@ -21,6 +18,7 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
+  if (!(event.request.url.indexOf("http") === 0)) return;
   event.respondWith(
     fetch(event.request)
       .then((res) => {
