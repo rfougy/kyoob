@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
-import HomePage from "./components/3DComponents/HomePage/HomePage";
+import HomePage from "./components/3DComponents/HomePage";
 import { themeLight, themeDark } from "./theme";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
