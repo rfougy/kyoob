@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import HomePage from "./components/3DComponents/HomePage";
+import Game from "./components/3DComponents/Game";
 import { themeLight, themeDark } from "./theme";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -14,7 +15,8 @@ function App() {
   return (
     <ThemeProvider theme={mode ? themeLight : themeDark}>
       <CssBaseline />
-      <HomePage />
+      <Game />
+      {/* <HomePage /> */}
       <Header changeMode={changeMode} mode={mode} />
     </ThemeProvider>
   );
